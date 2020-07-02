@@ -1,0 +1,25 @@
+{
+  "name": "@finbourne/lusid-sdk-angular8",
+  "version": "0.11.1504",
+  "description": "An angular (8+) SDK for secure access to the LUSID&reg; by FINBOURNE web API",
+  "keywords": [
+    "LUSID",
+    "Finbourne",
+    "SDK",
+    "angular",
+    "angular8"
+  ],
+  "homepage": "https://github.com/finbourne/lusid-sdk-angular/tree/master/projects/lusid-sdk-angular8",
+  "repository": {
+    "url": "https://github.com/finbourne/lusid-sdk-angular"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/finbourne/lusid-sdk-angular/issues",
+    "email": "lusid-sdk-angular.issues@finbourne.com"
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.0.0",
+    "@angular/core": "^8.0.0"
+  }
+}

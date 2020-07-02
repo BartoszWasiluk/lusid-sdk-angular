@@ -122,78 +122,38 @@
         }
       }
     },
-    "api-client": {
-      "root": "projects/api-client",
-      "sourceRoot": "projects/api-client/src",
+    "lusid-sdk-angular8": {
+      "root": "projects/lusid-sdk-angular8",
+      "sourceRoot": "projects/lusid-sdk-angular8/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/api-client/tsconfig.lib.json",
-            "project": "projects/api-client/ng-package.json"
+            "tsConfig": "projects/lusid-sdk-angular8/tsconfig.lib.json",
+            "project": "projects/lusid-sdk-angular8/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/api-client/ng-package.prod.json"
+              "project": "projects/lusid-sdk-angular8/ng-package.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/api-client/src/test.ts",
-            "tsConfig": "projects/api-client/tsconfig.spec.json",
-            "karmaConfig": "projects/api-client/karma.conf.js"
+            "main": "projects/lusid-sdk-angular8/src/test.ts",
+            "tsConfig": "projects/lusid-sdk-angular8/tsconfig.spec.json",
+            "karmaConfig": "projects/lusid-sdk-angular8/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/api-client/tsconfig.lib.json",
-              "projects/api-client/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "lusid-sdk-angular6": {
-      "root": "projects/lusid-sdk-angular6",
-      "sourceRoot": "projects/lusid-sdk-angular6/src",
-      "projectType": "library",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/lusid-sdk-angular6/tsconfig.lib.json",
-            "project": "projects/lusid-sdk-angular6/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "project": "projects/lusid-sdk-angular6/ng-package.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/lusid-sdk-angular6/src/test.ts",
-            "tsConfig": "projects/lusid-sdk-angular6/tsconfig.spec.json",
-            "karmaConfig": "projects/lusid-sdk-angular6/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/lusid-sdk-angular6/tsconfig.lib.json",
-              "projects/lusid-sdk-angular6/tsconfig.spec.json"
+              "projects/lusid-sdk-angular8/tsconfig.lib.json",
+              "projects/lusid-sdk-angular8/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

@@ -1,7 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/lusid-sdk-angular6",
-  "deleteDestPath": false,
+  "dest": "../../dist/lusid-sdk-angular8",
   "lib": {
     "entryFile": "src/public_api.ts"
   }

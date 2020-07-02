@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+  lusid-sdk-angular-gen:
+    container_name: lusid-sdk-angular-gen
+    build: .
+    image: finbourne/lusid-sdk-angular-gen
+    volumes:
+      - .:/usr/src
+    command: lusid.json
